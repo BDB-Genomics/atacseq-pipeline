@@ -1,15 +1,35 @@
-# Contributing to BDB Genomics Pipelines
+# Contributing to BDB Genomics
 
-Thank you for your interest in contributing to BDB Genomics!
+Thank you for considering contributing to BDB Genomics! Your help makes open-source bioinformatics more powerful and robust.
 
-## How to Contribute
-1. Fork the repository.
-2. 2. Create a new branch.
-   3. 3. Make your changes.
-      4. 4. Ensure reproducibility.
-         5. 5. Update docs.
-            6. 6. Submit a PR.
-              
-               7. ## Code of Conduct
-               8. Please be professional.
-               9. 
+Our goal is to build the most rigorous, modular standard for epigenomic and transcriptomic data processing. We welcome all contributions, whether you are fixing a bug, adding a new utility, or improving documentation.
+
+---
+
+## How Can I Help?
+
+### 1. Reporting Bugs & Suggestions
+If you find a bug or have a feature idea:
+- Check if an **Issue** already exists.
+- - If not, open a new one with details (logs, config, and example data).
+ 
+  - ### 2. Submitting Pull Requests (PRs)
+  - To contribute code:
+  - 1. **Fork** the repository and create a branch from `main`.
+    2. 2. **Develop** your isolated Snakemake rule (`.smk`) and its environment (`.yaml`).
+       3. 3. **Use Conda**: Ensure rules rely strictly on isolated environment descriptors.
+          4. 4. **Test**: Confirm your changes pass the `validate_config.py` check.
+             5. 5. **Open a PR**: Describe your changes and any new parameters clearly.
+               
+                6. ### 3. Improving Documentation
+                7. Bioinformatics is complex. If our guides are unclear or if you have a tutorial to share, please submit a documentation PR.
+               
+                8. ---
+               
+                9. ## Architecture Guidelines
+                10. - **Modularity**: Every tool must have its own `.smk` file and `.yaml` environment.
+                    - - **Fail Fast**: Build in checks to ensure the pipeline fails safely if inputs are flawed.
+                      - - **Parametrize**: Keep paths and variables in `config.yaml`, not in the rules.
+                       
+                        - *Thank you for helping us build better science.*
+                        - 
