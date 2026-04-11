@@ -1,0 +1,13 @@
+.aider*
+.snakemake/
+results/
+data/
+logs/
+.cache/
+__pycache__/
+*.fastq.gz
+*.bam
+*.bai
+*.bw
+.../
+PAT
