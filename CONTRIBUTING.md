@@ -15,21 +15,20 @@ If you find a bug or have a feature idea:
  
   - ### 2. Submitting Pull Requests (PRs)
   - To contribute code:
-  - 1. **Fork** the repository and create a branch from `main`.
-    2. 2. **Develop** your isolated Snakemake rule (`.smk`) and its environment (`.yaml`).
-       3. 3. **Use Conda**: Ensure rules rely strictly on isolated environment descriptors.
-          4. 4. **Test**: Confirm your changes pass the `validate_config.py` check.
-             5. 5. **Open a PR**: Describe your changes and any new parameters clearly.
+  - - **Fork** the repository and create a branch from `main`.
+    - - **Develop** your isolated Snakemake rule (`.smk`) and its environment (`.yaml`).
+      - - **Use Conda**: Ensure rules rely strictly on isolated environment descriptors.
+        - - **Test**: Confirm your changes pass the `validate_config.py` check.
+          - - **Open a PR**: Describe your changes and any new parameters clearly.
+           
+            - ### 3. Improving Documentation
+            - Bioinformatics is complex. If our guides are unclear or if you have a tutorial to share, please submit a documentation PR.
+           
+            - ---
+
+            ## Architecture Guidelines
+            - **Modularity**: Every tool must have its own `.smk` file and `.yaml` environment.
+            - - **Fail Fast**: Build in checks to ensure the pipeline fails safely if inputs are flawed.
+              - - **Parametrize**: Keep paths and variables in `config.yaml`, not in the rules.
                
-                6. ### 3. Improving Documentation
-                7. Bioinformatics is complex. If our guides are unclear or if you have a tutorial to share, please submit a documentation PR.
-               
-                8. ---
-               
-                9. ## Architecture Guidelines
-                10. - **Modularity**: Every tool must have its own `.smk` file and `.yaml` environment.
-                    - - **Fail Fast**: Build in checks to ensure the pipeline fails safely if inputs are flawed.
-                      - - **Parametrize**: Keep paths and variables in `config.yaml`, not in the rules.
-                       
-                        - *Thank you for helping us build better science.*
-                        - 
+                - *Thank you for helping us build better science.*
