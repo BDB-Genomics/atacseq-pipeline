@@ -1,5 +1,11 @@
 # ATACseq-Pipeline
 
+> **Mentorship & Guidance**
+> This pipeline was developed under the guidance of **Jessica Evangeline KC**, PhD Student,
+> Institute of Bioinformatics and Applied Biotechnology (IBAB), Bangalore.
+> Her mentorship shaped the design principles, QC strategy, and analytical rigor of this workflow.
+
+
 A modular Snakemake workflow for paired-end ATAC-seq processing, from raw FASTQ files to QC, peak calling, annotation, motif discovery, and reporting.
 
 ## Status
