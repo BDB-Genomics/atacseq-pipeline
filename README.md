@@ -1,33 +1,30 @@
-# ATACseq-Pipeline
+<p align="center">
+  <img src="assets/pipeline_diagram.svg" alt="Pipeline DAG" width="860" />
+</p>
+
+# BDB-Genomics ATAC-seq Pipeline
+
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT"></a>
+  <a href="https://github.com/BDB-Genomics/atacseq-pipeline/actions"><img src="https://img.shields.io/badge/Status-Integration_Testing-orange" alt="Status"></a>
+  <a href="https://snakemake.readthedocs.io"><img src="https://img.shields.io/badge/Snakemake-≥7.0-brightgreen.svg" alt="Snakemake"></a>
+</p>
+
+<p align="center">
+  <img src="assets/readme_animation.svg" alt="ATAC-seq Pipeline Overview" width="820" />
+</p>
 
 > **Mentorship & Guidance**
 > This pipeline was developed under the guidance of **Jessica Evangeline KC**, PhD Student,
 > Institute of Bioinformatics and Applied Biotechnology (IBAB), Bangalore.
 > Her mentorship shaped the design principles, QC strategy, and analytical rigor of this workflow.
 
-
-A modular Snakemake workflow for paired-end ATAC-seq processing, from raw FASTQ files to QC, peak calling, annotation, motif discovery, and reporting.
+> A modular Snakemake workflow for paired-end ATAC-seq processing, from raw FASTQ files to QC, peak calling, annotation, motif discovery, and reporting.
 
 ## Status
 
 - DAG-resolved on the current workflow layout.
 - Smoke tests, benchmark baselines, and regression coverage are still pending.
-
-## Workflow Summary
-
-This pipeline performs:
-
-- FASTQ trimming and QC with `fastp` and `FastQC`
-- Alignment with `bowtie2`
-- Post-alignment processing with `samtools`
-- Mitochondrial read removal
-- Duplicate marking and filtering
-- Tn5 shifting
-- Coverage generation and normalization
-- Peak calling and blacklist filtering
-- Peak annotation and motif discovery
-- QC metrics, FRiP, TSS enrichment, and QC gating
-- MultiQC aggregation
 
 ## Repository Layout
 
